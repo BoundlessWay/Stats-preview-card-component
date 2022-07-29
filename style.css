@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root {
+    --primary-Very-dark-blue-main-background: hsl(233, 47%, 7%);
+    --primary-Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+    --primary-Soft-violet-accent: hsl(277, 64%, 61%);
+    --neutral-White-main-heading-stats: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 800px;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-Very-dark-blue-main-background);
+}
+
+.Stats-preview-card-component {
+    height: 446px;
+    width: 1110px;
+    margin: auto;
+    background-color: var(--primary-Dark-desaturated-blue-card-background);
+    border-radius: 5px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.SPC-component__mobile-image {
+    display: none;
+}
+
+.SPC-component__content {
+    display: inline-block;
+    width: 570px;
+    padding: 64px;
+    height: 100%;
+    vertical-align: top;
+    position: relative;
+}
+
+.SPC-component__content::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    background-color: var(--primary-Soft-violet-accent);
+    width: 540px;
+    top: 0;
+    opacity: 0.3;
+}
+
+.SPC-component__desktop-image {
+    vertical-align: top;
+}
+
+.SPC-component__title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--neutral-White-main-heading-stats);
+}
+
+.SPC-component__title>span {
+    color: var(--primary-Soft-violet-accent);
+}
+
+.SPC-component__desc {
+    margin-top: 30px;
+    color: var(--Slightly-transparent-white-stat-headings);
+    font-size: 1.4rem;
+    line-height: 25px;
+    width: 366px;
+}
+
+.SPC-component__stat {
+    margin-top: 80px;
+    height: 48px;
+}
+
+.stat__object {
+    margin-right: 56px;
+    height: 100%;
+    display: inline-block;
+}
+
+.stat__Amount {
+    color: var(--neutral-White-main-heading-stats);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.stat__name {
+    color: var(--Slightly-transparent-white-stat-headings);
+    font-size: 1.2rem;
+    margin-top: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,59 @@
+@media screen and (max-width: 800px) {
+    body {
+        height: 956px;
+    }
+    .Stats-preview-card-component {
+        height: auto;
+        width: 327px;
+    }
+    .SPC-component__mobile-image {
+        display: block;
+        width: 100%;
+    }
+    .SPC-component__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        padding: 32px;
+        text-align: center;
+    }
+    .SPC-component__content::after {
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-Soft-violet-accent);
+        height: 240px;
+        transform: translateY(-100%);
+        opacity: 0.3;
+    }
+    .SPC-component__desktop-image {
+        display: none;
+    }
+    .SPC-component__title {
+        font-size: 2.8rem;
+    }
+    .SPC-component__desc {
+        margin-top: 16px;
+        width: 250px;
+    }
+    .SPC-component__stat {
+        margin-top: 48px;
+        height: 208px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+    .stat__object {
+        display: block;
+        margin-right: 0;
+    }
+    .stat__name {
+        color: var(--Slightly-transparent-white-stat-headings);
+        font-size: 1.2rem;
+        margin-top: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
