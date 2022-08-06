@@ -7,7 +7,7 @@
         width: 327px;
     }
     .SPC-component__mobile-image {
-        display: block;
+        display: inline-block;
         width: 100%;
     }
     .SPC-component__content {
@@ -22,7 +22,6 @@
     .SPC-component__content::after {
         left: 0;
         width: 100%;
-        background-color: var(--primary-Soft-violet-accent);
         height: 240px;
         transform: translateY(-100%);
         opacity: 0.3;

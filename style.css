@@ -40,6 +40,8 @@ body {
 
 .SPC-component__mobile-image {
     display: none;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
 }
 
 .SPC-component__content {
@@ -54,16 +56,17 @@ body {
 .SPC-component__content::after {
     content: "";
     position: absolute;
+    background-color: var(--primary-Soft-violet-accent);
     left: 100%;
     height: 100%;
-    background-color: var(--primary-Soft-violet-accent);
     width: 540px;
     top: 0;
-    opacity: 0.3;
 }
 
 .SPC-component__desktop-image {
     vertical-align: top;
+    mix-blend-mode: multiply;
+    opacity: 0.75;
 }
 
 .SPC-component__title {
