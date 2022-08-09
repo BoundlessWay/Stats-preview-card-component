@@ -14,9 +14,6 @@
 <body>
 
     <main class="Stats-preview-card-component">
-
-        <img src="./Resources/images/image-header-mobile.jpg" alt="" class="SPC-component__mobile-image">
-
         <div class="SPC-component__content ">
             <h1 class="SPC-component__title ">
                 Get <span>insights</span> that help your business grow.
@@ -37,6 +34,8 @@
                 </div>
             </div>
         </div>
+        <!-- Thẻ img có opacity nằm dưới phần tử có lớp nền pseudo sẽ không bị che bởi lớp nền, ngược lại nếu thẻ img nằm trên, lớp nền pseudo sẽ che img dù cho có opacity  -->
+        <img src="./Resources/images/image-header-mobile.jpg" alt="" class="SPC-component__mobile-image">
         <img src="./Resources/images/image-header-desktop.jpg" alt="" class="SPC-component__desktop-image">
 
     </main>

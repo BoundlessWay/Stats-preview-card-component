@@ -5,6 +5,8 @@
     .Stats-preview-card-component {
         height: auto;
         width: 327px;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .SPC-component__mobile-image {
         display: inline-block;
@@ -24,7 +26,6 @@
         width: 100%;
         height: 240px;
         transform: translateY(-100%);
-        opacity: 0.3;
     }
     .SPC-component__desktop-image {
         display: none;
